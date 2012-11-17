@@ -2,7 +2,7 @@ My config files...
 
 To install:
 ```bash
-git clone
+git clone https://github.com/philipbjorge/config.git
 cd config
 ./install/go.rb```
 
