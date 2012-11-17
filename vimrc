@@ -30,6 +30,7 @@ set shell=/bin/bash
  Bundle 'tpope/vim-surround'
  "vim surround
  Bundle 'Lokaltog/vim-easymotion'
+ Bundle 'flazz/vim-colorschemes'
  " vim-scripts repos
  "Bundle 'L9'
  "Bundle 'FuzzyFinder'
@@ -110,7 +111,7 @@ endif
 set wildmenu    " enhanced command-line completion
 
 " --visual theme and appearance
-"colorscheme desert  " preferred colorscheme
+colorscheme wombat256  " preferred colorscheme
 
 if has("gui_running")
     " gVim specific
