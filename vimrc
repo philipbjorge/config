@@ -1,5 +1,57 @@
 " prevent vim from emulating vi 
 set nocompatible    " enabled when (g)vimrc is found
+set shell=/bin/bash
+
+" Vundle init
+ filetype off                   " required!
+
+ set rtp+=~/.vim/bundle/vundle/
+ call vundle#rc()
+
+ " let Vundle manage Vundle
+ " required! 
+ Bundle 'gmarik/vundle'
+
+ " My Bundles here:
+ "
+ " original repos on github
+ Bundle 'tpope/vim-fugitive'
+ "git plugin
+ Bundle 'mileszs/ack.vim'
+ "ack plugin
+ Bundle 'scrooloose/nerdcommenter'
+ "comment plugin
+ Bundle 'ervandew/supertab'
+ "supertab
+ Bundle 'scrooloose/syntastic'
+ "auto compilation/syntax highlighting
+ Bundle 'chrisbra/NrrwRgn'
+ "narrow region
+ Bundle 'tpope/vim-surround'
+ "vim surround
+ Bundle 'Lokaltog/vim-easymotion'
+ " vim-scripts repos
+ "Bundle 'L9'
+ "Bundle 'FuzzyFinder'
+ " non github repos
+ Bundle 'git://git.wincent.com/command-t.git'
+ " fuzzy search
+   " ctrl-p is good if your vim only has python support
+   " cd ~/config/vim/bundle/command-t/ruby/command-t
+   " ruby extconf.rb
+   " make
+
+ filetype plugin indent on     " required!
+ "
+ " Brief help
+ " :BundleList          - list configured bundles
+ " :BundleInstall(!)    - install(update) bundles
+ " :BundleSearch(!) foo - search(or refresh cache first) for foo
+ " :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+ "
+ " see :h vundle for more details or wiki for FAQ
+ " NOTE: comments after Bundle command are not allowed..
+
 " easier to reach than \
 let mapleader = ","
 " easier to reach than Esc or Ctrl-[
