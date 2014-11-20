@@ -183,3 +183,7 @@ inoremap <C-t>     <Esc>:tabnew<CR>
 
 " VimRuby error fix
 let g:ruby_path = '/usr/bin/ruby'
+
+" wildignore vendor files
+let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/vendor/*,*/\.git/*
