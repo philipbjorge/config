@@ -5,8 +5,8 @@ set shell=/bin/bash
 " Vundle init
  filetype off                   " required!
 
- set rtp+=~/.vim/bundle/vundle/
- call vundle#rc()
+ set rtp+=~/.vim/bundle/Vundle.vim
+ call vundle#begin()
 
  " let Vundle manage Vundle
  " required! 
@@ -15,8 +15,6 @@ set shell=/bin/bash
  " My Bundles here:
  "
  " original repos on github
- Bundle 'tpope/vim-fugitive'
- "git plugin
  Bundle 'mileszs/ack.vim'
  "ack plugin
  Bundle 'scrooloose/nerdcommenter'
@@ -35,14 +33,15 @@ set shell=/bin/bash
  "Bundle 'L9'
  "Bundle 'FuzzyFinder'
  " non github repos
- Bundle 'git://git.wincent.com/command-t.git'
+ Bundle 'kien/ctrlp.vim'
  " fuzzy search
    " ctrl-p is good if your vim only has python support
    " cd ~/config/vim/bundle/command-t/ruby/command-t
    " ruby extconf.rb
    " make
 
- filetype plugin indent on     " required!
+ call vundle#end()            " required
+ filetype plugin indent on    " required
  "
  " Brief help
  " :BundleList          - list configured bundles
@@ -146,9 +145,9 @@ set autoread  " update file when externally modified
 
 " --indenting
 set fileformats=unix,dos,mac " try recognizing line endings in this order
-set tabstop=4                " width of a tab character in spaces
-set softtabstop=4            " defines number of spaces for when adding/removing tabs
-set shiftwidth=4             " number of spaces to use for autoindent
+set tabstop=2                " width of a tab character in spaces
+set softtabstop=2            " defines number of spaces for when adding/removing tabs
+set shiftwidth=2             " number of spaces to use for autoindent
 set expandtab                " use spaces instead of tab characters; to insert real tab, use <C-v><Tab>
 set smartindent              " automatic indenting; see ':h C-indenting' for comparison
 
