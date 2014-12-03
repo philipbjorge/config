@@ -33,6 +33,10 @@ set shell=/bin/bash
  "Bundle 'L9'
  "Bundle 'FuzzyFinder'
  " non github repos
+ Bundle "tpope/vim-rails"
+ Bundle "vim-ruby/vim-ruby"
+ Bundle "tpope/vim-haml"
+ Bundle "tpope/vim-endwise"
  Bundle 'kien/ctrlp.vim'
  " fuzzy search
    " ctrl-p is good if your vim only has python support
