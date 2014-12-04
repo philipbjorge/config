@@ -20,6 +20,7 @@ set shell=/bin/bash
  Bundle 'scrooloose/nerdcommenter'
  "comment plugin
  Bundle 'ervandew/supertab'
+ Bundle 'tpope/vim-fugitive'
  "supertab
  Bundle 'scrooloose/syntastic'
  "auto compilation/syntax highlighting
@@ -38,6 +39,7 @@ set shell=/bin/bash
  Bundle "tpope/vim-haml"
  Bundle "tpope/vim-endwise"
  Bundle 'kien/ctrlp.vim'
+ Bundle 'bling/vim-airline'
  " fuzzy search
    " ctrl-p is good if your vim only has python support
    " cd ~/config/vim/bundle/command-t/ruby/command-t
@@ -122,6 +124,7 @@ if has("gui_running")
     " gVim interface modification
     "set guioptions-=m " remove menu bar
     set guioptions-=T " remove toolbar
+    set guifont=Sauce\ Code\ Powerline:h14
 endif
 
 " --movement / navigation
@@ -191,3 +194,6 @@ let g:ruby_path = '/usr/bin/ruby'
 " wildignore vendor files
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/vendor/*,*/\.git/*
+
+let g:airline_theme='simple'
+let g:airline_powerline_fonts=1
