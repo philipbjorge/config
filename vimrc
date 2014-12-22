@@ -40,6 +40,7 @@ set shell=/bin/bash
  Bundle "tpope/vim-endwise"
  Bundle 'kien/ctrlp.vim'
  Bundle 'bling/vim-airline'
+ Bundle 'rking/ag.vim'
  " fuzzy search
    " ctrl-p is good if your vim only has python support
    " cd ~/config/vim/bundle/command-t/ruby/command-t
@@ -116,7 +117,7 @@ endif
 set wildmenu    " enhanced command-line completion
 
 " --visual theme and appearance
-colorscheme wombat256  " preferred colorscheme
+colorscheme molokai  " preferred colorscheme
 
 if has("gui_running")
     " gVim specific
