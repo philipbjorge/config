@@ -41,6 +41,7 @@ set shell=/bin/bash
  Bundle 'kien/ctrlp.vim'
  Bundle 'bling/vim-airline'
  Bundle 'rking/ag.vim'
+ Plugin 'kchmck/vim-coffee-script'
  " fuzzy search
    " ctrl-p is good if your vim only has python support
    " cd ~/config/vim/bundle/command-t/ruby/command-t
@@ -130,6 +131,7 @@ endif
 
 " --movement / navigation
 set scrolloff=5 " scrolling starts 5 lines before window border
+set tags=./tags,tags;$HOME
 
 " easier window navigation
 nnoremap <C-h> <C-w>h
@@ -182,19 +184,19 @@ nnoremap k gk
 
 " Firefox tab navigation
 " tab navigation like firefox
-nnoremap <C-S-tab> :tabprevious<CR>
-nnoremap <C-tab>   :tabnext<CR>
-nnoremap <C-t>     :tabnew<CR>
-inoremap <C-S-tab> <Esc>:tabprevious<CR>i
-inoremap <C-tab>   <Esc>:tabnext<CR>i
-inoremap <C-t>     <Esc>:tabnew<CR>
+"nnoremap <C-S-tab> :tabprevious<CR>
+"nnoremap <C-tab>   :tabnext<CR>
+"nnoremap <C-t>     :tabnew<CR>
+"inoremap <C-S-tab> <Esc>:tabprevious<CR>i
+"inoremap <C-tab>   <Esc>:tabnext<CR>i
+"inoremap <C-t>     <Esc>:tabnew<CR>
 
 " VimRuby error fix
 let g:ruby_path = '/usr/bin/ruby'
 
 " wildignore vendor files
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/vendor/*,*/\.git/*
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/vendor/*,*/\.git/*,*/node_modules/*
 
 let g:airline_theme='simple'
 let g:airline_powerline_fonts=1
